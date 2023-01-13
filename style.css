@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: repeating-linear-gradient(to right,rgb(247, 0, 0), rgb(247, 247, 247),  rgb(115, 18, 189));
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9fbfd;
+}
+
+.wrapper {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+  color: hsl(206, 17%, 28%);
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+}
+.pokeSign{
+  color: rgb(255, 234, 5);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+  
+  text-shadow: -3px -1px 0  rgb(34, 0, 255),-2px -1px 0  rgb(34, 0, 255), -2px -1px 0  rgb(34, 0, 255), -2px -1px 0  rgb(34, 0, 255);
+}
+
+.scarlet {
+  color: rgb(238, 10, 10);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: #FC0 1px 0 10px;
+  
+}
+.violet {
+  color: rgb(122, 100, 230);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  text-shadow: -1px -1px 0  #FC0, 1px -1px 0  #FC0, 1px -1px 0  #FC0, 1px -1px 0  #FC0 ;
+}
+
+.generator {
+  animation-name: turnColor;
+  animation-duration: 30s;
+  /* height: 50px; */
+  animation-iteration-count: infinite;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+@keyframes turnColor {
+  0% {color: #000000;}
+  10% {color: #6d0b9b;}
+  20% {color: #9b0b47;}
+  30% {color: #b68603;}
+  40% {color: #18aa24;}
+  50% {color: #59CFEC;}
+  60% {color: #bd0fbd;}
+  75% {color: #bd0f0f;}
+  100% {color: #1607f5;}
+}
+/* .card-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+} */
+
+.card-body {
+  min-height: 100px;
+}
+
+.card-footer {
+  text-align: center;
+}
+
+
+
+.card-footer::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.btn {
+  border: none;
+  background-color: rgb(250, 133, 17);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  /* margin: 16px 16px 16px 20px; */
+  padding: 14px 34px;
+  text-align: center;
+  cursor:url(https://img.icons8.com/clouds/100/null/nintendo-switch-logo.png), auto;
+  
+}
+
+.btn:hover {
+  cursor:url(https://img.icons8.com/clouds/100/null/nintendo-switch-logo.png), auto;
+  background-color: rgb(194, 103, 13);
+}
+
+footer {
+  float:right;
+  font-size: 13px;
+  text-decoration: none;
+  color: rgb(163, 163, 163);
+  
+}
+
+.float-right {
+  float: right;
+}
+
+#password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+}
+
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+  }
+}
