@@ -1,0 +1,1 @@
+# Pokemon Randomizer for Scarlet and Violet :)
