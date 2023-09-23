@@ -12,7 +12,7 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 // Make function to happen after event listener
 function generatePassword() {
-  var charstotal = prompt("How many pokemon would your like to get?")
+  var charstotal = prompt("How many pokemon would your like to get? (Must be 1-6)")
   if ((charstotal < 1) || (charstotal > 6) || (isNaN(charstotal) === true)) {
     alert("Number must be between 1 through 6")
     generatePassword()
